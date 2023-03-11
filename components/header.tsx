@@ -14,7 +14,7 @@ const Header = () => {
             <Box className='w-full px-16 flex justify-between flex-col items-center md:flex-row '>
                 <Box className='flex justify-center w-[65px] my-3 rounded-full md:my-6'> 
                 {/*   */}
-                <Avatar size={['sm','lg','lg']} src='https://avatars.githubusercontent.com/u/49856315?v=4' />
+                <Avatar size={['lg','lg','lg']} src='https://avatars.githubusercontent.com/u/49856315?v=4' />
                 </Box>
                 <Box className=' md:py-6 flex justify-center'>
                     <List className='flex items-center justify-center space-x-5'>
