@@ -148,12 +148,12 @@ Overall, a technical team in IT is made up of individuals with specialized skill
             </List>
           </Box>
           </Box>
-          <Box as='footer' className='w-full px-16 flex justify-between flex-col items-center md:flex-row bg-white h-20'>
+          <Box as='footer' className='w-full py-10 px-16 flex justify-between flex-col items-center md:flex-row bg-white h-20'>
             <Box className='font-semibold'>
             2023 Daniyal Alam
             </Box>
 
-            <Box className='font-semibold'>
+            <Box className='font-semibold py-10'>
               <List className='flex space-x-10 justify-center '>
                 <ListItem className='whitespace-pre'>Privacy Policy</ListItem>
                 <ListItem className='whitespace-pre'>Terms and Conditions</ListItem>
