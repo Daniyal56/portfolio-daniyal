@@ -50,6 +50,11 @@ export default function Home() {
         <br></br>
         Web Development
         </h1>
+        <h1 className='font-extrabold text-2xl md:text-5xl py-2 '> 
+        Hello, My Self Daniyal Alam
+        <br></br>
+        
+        </h1>
         <div className='text-1xl md:text-2xl  '>
           <Text className='text-center md:text-start py-4 px-8 md:px-0'>
           we specialize in building interactive websites that engage and delight users. We believe that a website should be more than just a static online presence - it should be an immersive experience that captures the user's attention and keeps them engaged.
