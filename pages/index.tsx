@@ -50,14 +50,14 @@ export default function Home() {
         <br></br>
         Web Development
         </h1>
-        <div className='text-1xl md:text-2xl  py-4'>
-          <Text>
+        <div className='text-1xl md:text-2xl  '>
+          <Text className='text-center md:text-start py-4 px-8 md:px-0'>
           we specialize in building interactive websites that engage and delight users. We believe that a website should be more than just a static online presence - it should be an immersive experience that captures the user's attention and keeps them engaged.
           </Text>
           </div>
       </main>
       <Box id="work">
-        <Heading className='text-center  font-semibold text-5xl py-20 '>Work</Heading>
+        <Heading className='text-center  font-semibold text-5xl py-20 underline'>Work</Heading>
         <Box className='flex flex-wrap justify-evenly px-2'>
           {
             details.map((d) =>{
@@ -90,7 +90,7 @@ export default function Home() {
         </Box>
       </Box>
       <Box id="services">
-        <Heading className='text-center  font-semibold text-5xl py-4 '>Services</Heading>
+        <Heading className='text-center  font-semibold text-5xl py-20 underline '>Services</Heading>
         <Box className='flex flex-wrap justify-evenly px-2'></Box>
         <Box className='flex flex-wrap justify-evenly px-2'>
         {
@@ -139,12 +139,12 @@ Overall, a technical team in IT is made up of individuals with specialized skill
             <Heading className='text-center  py-8'>Contact</Heading>
             <Text className='text-center  cursor-pointer text-2xl'>scdaniyalalam@gmail.com</Text>
             <List className='flex justify-around flex-wrap md:flex-row md:justify-center space-x-6  py-4 px-2'   >
-              <ListItem className='cursor-pointer hover:font-extrabold hover:underline'>Twitter</ListItem>
-              <ListItem className='cursor-pointer hover:font-extrabold hover:underline'>LinkedIn</ListItem>
-              <ListItem className='cursor-pointer hover:font-extrabold hover:underline'>Dribbble</ListItem>
-              <ListItem className='cursor-pointer hover:font-extrabold hover:underline'>YouTube</ListItem>
-              <ListItem className='cursor-pointer hover:font-extrabold hover:underline'>Instagram</ListItem>
-              <ListItem className='cursor-pointer hover:font-extrabold hover:underline'>Facebook</ListItem>
+              <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>Twitter</ListItem>
+              <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>LinkedIn</ListItem>
+              <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>Dribbble</ListItem>
+              <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>YouTube</ListItem>
+              <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>Instagram</ListItem>
+              <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>Facebook</ListItem>
             </List>
           </Box>
           </Box>
@@ -154,9 +154,9 @@ Overall, a technical team in IT is made up of individuals with specialized skill
             </Box>
 
             <Box className='font-semibold'>
-              <List className='flex space-x-10 '>
-                <ListItem>Privacy Policy</ListItem>
-                <ListItem>Terms and Conditions</ListItem>
+              <List className='flex space-x-10 justify-center '>
+                <ListItem className='whitespace-pre'>Privacy Policy</ListItem>
+                <ListItem className='whitespace-pre'>Terms and Conditions</ListItem>
               </List>
             </Box>
             
