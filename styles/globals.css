@@ -13,5 +13,8 @@
     border-radius: 14px;
     border: 3px solid var(--primary);
   }
+  *.img-logo{
+    filter: drop-shadow(2px 4px 6px black)
+  }
 @tailwind components;
 @tailwind utilities;

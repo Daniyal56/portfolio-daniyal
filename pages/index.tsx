@@ -123,7 +123,7 @@ export default function Home() {
         </Box>
       </Box>
           <Box className=' py-20'>
-          <Heading className='text-center  font-semibold text-5xl py-4 '>Our Team</Heading>
+          <Heading className='text-center  font-semibold text-5xl py-4 '>About</Heading>
             <Box>
               <Text className=' text-center px-2 md:px-16'>
               Software developers are responsible for designing, developing, and maintaining software applications, while system administrators ensure that the organization's computer systems are running efficiently and securely. Network engineers design and maintain the organization's computer network, while database administrators manage the organization's databases.
