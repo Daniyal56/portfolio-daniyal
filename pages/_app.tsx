@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react';
-import Header from '@/components/header'
+// import Header from '@/components/header'
 import Head from 'next/head'
 import { useState } from 'react'
 
@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href='https://avatars.githubusercontent.com/u/49856315?v=4' />
       </Head>
-    <Header />
+    
   <Component {...pageProps} />
   </ChakraProvider>
   )

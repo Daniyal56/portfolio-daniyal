@@ -19,9 +19,9 @@ const Header = () => {
                 <Box className=' md:py-6 flex justify-center'>
                     <List className='flex items-center justify-center space-x-5'>
                         <ListItem></ListItem>
-                        <ListItem className='cursor-pointer font-medium md:text-2xl hover:underline '> <a href='#work'>Work</a></ListItem>
-                        <ListItem className='cursor-pointer font-medium md:text-2xl hover:underline'><a href='#services'>Services</a></ListItem>
-                        <ListItem className='cursor-pointer font-medium md:text-2xl hover:underline'><a href='#contact'>Contact</a></ListItem>
+                        <ListItem className='cursor-pointer font-medium md:text-2xl hover:underline font-primary '> <a href='#work'>Work</a></ListItem>
+                        <ListItem className='cursor-pointer font-medium md:text-2xl hover:underline font-primary'><a href='#services'>Services</a></ListItem>
+                        <ListItem className='cursor-pointer font-medium md:text-2xl hover:underline font-primary'><a href='#contact'>Contact</a></ListItem>
                     </List>
                 </Box>
             </Box>

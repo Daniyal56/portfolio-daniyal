@@ -9,6 +9,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
+import Header from '@/components/header'
 
 const inter = Inter({ subsets: ['latin'] })
 const details = [
@@ -47,7 +48,8 @@ export default function Home() {
 
   return (
     <>
-
+      <Box className=' min-h-screen grid font-primary'>
+      <Header />
       <main className='px-2 md:px-16  py-5 flex flex-col items-center md:items-start'>
 
         <h1 className='font-extrabold text-3xl md:text-7xl py-20 text-center md:text-start'>
@@ -55,14 +57,14 @@ export default function Home() {
           <br></br>
           Web Developer, AI Developer
         </h1>
-        <Heading lineHeight='tall' className='font-extrabold  text-2xl md:text-5xl py-2 text-center md:text-start'>
+        <Text lineHeight='tall' className='font-extrabold font-primary text-2xl md:text-5xl py-2 text-center md:text-start'>
           <Highlight
             query='Daniyal Alam'
             styles={{ px: '2', py: '2', rounded: 'md', bg: 'yellow.200',border:'2px',borderColor:'yellow.500' }}
           >
            Hello, My Self Daniyal Alam
           </Highlight>
-        </Heading>
+        </Text>
 
         {/* <h1 className='font-extrabold text-2xl md:text-5xl py-2 '>
           Hello, My Self Daniyal Alam
@@ -93,14 +95,14 @@ export default function Home() {
       </main>
       
         <Box id="work">
-          <Heading className='text-center  font-semibold text-5xl py-20 underline'>Work</Heading>
+          <Text className='text-center  font-semibold text-2xl md:text-5xl md:py-20 underline font-primary'>Work</Text>
           <Box className='flex flex-wrap justify-evenly px-2'>
             {
               details.map((d) => {
                 return (
                   <Card maxW={['xs', 'sm', 'sm']} className=' my-2 hover:bg-green-900 hover:text-white'>
                     <CardHeader>
-                      <Heading size={['sm', 'md', 'md']}>{d.title}</Heading>
+                      <Text size={['sm', 'md', 'md']} className="font-primary font-bold text-lg">{d.title}</Text>
                     </CardHeader>
                     <CardBody>
                       <Stack mt='6' spacing='3'>
@@ -112,7 +114,7 @@ export default function Home() {
                     </CardBody>
                     <CardFooter>
                       <ButtonGroup spacing='2'>
-                        <Button variant='outline' colorScheme='green'>
+                        <Button variant='solid' colorScheme='green'>
                           See Project  <ArrowForwardIcon />
                         </Button>
 
@@ -126,7 +128,7 @@ export default function Home() {
           </Box>
         </Box>
         <Box id="services">
-          <Heading className='text-center  font-semibold text-5xl py-20 underline '>Services</Heading>
+          <Text className='text-center font-primary font-semibold text-2xl md:text-5xl md:py-20 py-10 underline '>Services</Text>
           <Box className='flex flex-wrap justify-evenly px-2'></Box>
           <Box className='flex flex-wrap justify-evenly px-2'>
             {
@@ -134,7 +136,7 @@ export default function Home() {
                 return (
                   <Card maxW={['xs', 'sm', 'sm']} className=' my-2 grid content-between hover:bg-green-900 hover:text-white'>
                     <CardHeader>
-                      <Heading size={['sm', 'md', 'md']}>{d.title}</Heading>
+                      <Text size={['sm', 'md', 'md']} className='font-bold text-lg'>{d.title}</Text>
                     </CardHeader>
                     <CardBody>
                       <Stack mt='6' spacing='3'>
@@ -145,7 +147,7 @@ export default function Home() {
                       </Stack>
                     </CardBody>
                     <CardFooter className='bg-green-900 '>
-                      <Text className=' font-semibold font-2xl cursor-pointer text-white '> Book Now</Text>
+                      <Text className=' font-semibold font-primary font-2xl cursor-pointer text-white '> Book Now</Text>
                     </CardFooter>
                   </Card>
                 )
@@ -153,8 +155,8 @@ export default function Home() {
             }
           </Box>
         </Box>
-        <Box className=' py-20'>
-          <Heading className='text-center  font-semibold text-5xl py-4 '>About</Heading>
+        <Box className=' md:py-20'>
+          <Text className='text-center font-primary font-semibold text-2xl md:text-5xl md:py-20 py-10 underline'>About</Text>
           <Box>
             <Text className=' text-center px-2 md:px-16'>
               Software developers are responsible for designing, developing, and maintaining software applications, while system administrators ensure that the organization's computer systems are running efficiently and securely. Network engineers design and maintain the organization's computer network, while database administrators manage the organization's databases.
@@ -171,9 +173,13 @@ export default function Home() {
 
             </Text>
           </Box>
-          <Box id="contact">
-            <Heading className='text-center  py-8'>Contact</Heading>
-            <Text className='text-center  cursor-pointer text-2xl'>scdaniyalalam@gmail.com</Text>
+          
+        </Box>
+        <footer className='bg-black text-white'>
+        
+        <Box id="contact">
+            <Text className='text-center  py-8 font-primary text-4xl font-bold'>Contact</Text>
+            <Text className='text-center cursor-pointer text-1xl'>scdaniyalalam@gmail.com</Text>
             <List className='flex justify-around flex-wrap md:flex-row md:justify-center space-x-6  py-4 px-2'   >
               <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>Twitter</ListItem>
               <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>LinkedIn</ListItem>
@@ -183,19 +189,23 @@ export default function Home() {
               <ListItem className='cursor-pointer hover:font-extrabold hover:underline font-medium'>Facebook</ListItem>
             </List>
           </Box>
-        </Box>
-        <Box as='footer' className='w-full py-10 px-16 flex justify-between flex-col items-center md:flex-row bg-white h-20'>
-          <Box className='font-semibold'>
+        
+        <Box  className='w-full py-10 md:px-10 flex justify-between flex-col items-center md:flex-row bg-black'>
+            
+          <Box className='font-semibold  bg-black '>
             2023 Daniyal Alam
           </Box>
 
-          <Box className='font-semibold py-10'>
-            <List className='flex space-x-10 justify-center '>
+          <Box className='font-semibold bg-black'>
+            <List className='flex space-x-10 justify-center py-5'>
               <ListItem className='whitespace-pre'>Privacy Policy</ListItem>
               <ListItem className='whitespace-pre'>Terms and Conditions</ListItem>
             </List>
           </Box>
 
+        </Box>
+  
+        </footer>
         </Box>
       </>
       )
